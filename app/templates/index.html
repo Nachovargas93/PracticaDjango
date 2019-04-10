@@ -1,0 +1,20 @@
+<html>
+<body>
+    <h1>Lista de Distritos</h1>
+    <br>
+
+    {% for d in listadistritos%}
+    <p>{{d.nombre}}</p>
+    <a href="{% url 'ver_candidatos' d.id %}" method="POST"> Mas  </a>
+    {%endfor%}
+
+
+</body>
+
+
+
+
+
+
+
+</html>

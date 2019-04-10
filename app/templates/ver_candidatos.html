@@ -1,0 +1,25 @@
+<html>
+<body>
+    <h2>Distrito {{dic_distritos.nombre}}</h2>
+
+    <h2>Lista de candidatos:</h2>
+    
+
+    {% for c in dic_candidato %}
+        <p> {{c.nombre}}</p>
+        <a href="{% url 'ver_votos' c.id %}" method="POST" > Mas </a>
+    {%endfor%}
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
